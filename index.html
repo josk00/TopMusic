@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>TopMusic</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">TopMusic</div>
+        <div class="subtitle">Музыка, которую хочется слушать</div>
+      </div>
+      <button class="avatar" id="profileBtn">♪</button>
+    </header>
+
+    <section class="search">
+      <span>⌕</span>
+      <input id="searchInput" placeholder="Найти песню или исполнителя..." autocomplete="off">
+    </section>
+
+    <section id="content">
+      <h2>Популярное</h2>
+      <div class="chips">
+        <button class="chip active" data-filter="all">Все</button>
+        <button class="chip" data-filter="pop">Pop</button>
+        <button class="chip" data-filter="hiphop">Hip-Hop</button>
+        <button class="chip" data-filter="rock">Rock</button>
+      </div>
+      <div id="tracks" class="tracks"></div>
+    </section>
+
+    <nav class="nav">
+      <button class="nav-item active" data-tab="home">⌂<span>Главная</span></button>
+      <button class="nav-item" data-tab="favorites">♡<span>Избранное</span></button>
+      <button class="nav-item" data-tab="profile">◉<span>Профиль</span></button>
+    </nav>
+  </main>
+
+  <div class="player" id="player">
+    <div class="cover" id="playerCover">♪</div>
+    <div class="player-info">
+      <b id="playerTitle">Выберите трек</b>
+      <small id="playerArtist">TopMusic</small>
+    </div>
+    <button id="playBtn">▶</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
