@@ -42,3 +42,58 @@
     color: #888;
     margin-top: 5px;
 }
+
+/* FIX FOR MUSIC CARDS */
+
+.tracks .track {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    min-height: 74px !important;
+    padding: 10px !important;
+}
+
+.tracks .track-cover {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+    max-width: 54px !important;
+    flex: 0 0 54px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background: #292933 !important;
+}
+
+.tracks .track-cover img {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+    max-width: 54px !important;
+    min-height: 54px !important;
+    max-height: 54px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.tracks .track-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+}
+
+.tracks .track-title {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.tracks .track-artist {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.tracks .favorite-btn,
+.tracks .play-btn {
+    flex-shrink: 0 !important;
+}
